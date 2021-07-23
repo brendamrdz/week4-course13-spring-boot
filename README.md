@@ -9,7 +9,7 @@ DevOps enables previously isolated roles —development, IT operations, quality 
 - **Sharing:** Better internal tools shared by both teams so that the code in production is always in high quality and can be fixed as quickly as possible.
 With this, the idea is that one of the results is more deployments that contain fewer features and as a consequence, fewer bugs in production.
 <br><br><img src="https://user-images.githubusercontent.com/26840321/126744266-b472f6cd-e6f0-49b1-a0ff-7d128949f139.png" alt="alt text" width="30%" height="auto"><br><br>
-
+## DevOps lifecycle phases
 # What are DevOps tools?
 A DevOps tools approach helps developers and operations teams build, test, deploy and monitor applications with speed, quality and control. Successful DevOps software implementations generally rely on an integrated set of solutions, or a toolchain, to eliminate manual steps, reduce errors, increase team agility, and scale beyond small teams.
 <br><br><img src="https://github.com/brendamrdz/week4-course14-devops/blob/main/images/Diagrama-DevSecOps-1024x572.png?raw=true" alt="alt text" width="100%" height="auto"><br><br>
