@@ -15,7 +15,7 @@ A DevOps tools approach helps developers and operations teams build, test, deplo
 ## Docker
 One of the ways to solve the "it works in my machine" problem is to have homogeneity in all environments. Running code on our local machine should look as similar as possible to the test and production environment.
 Docker is recommended, it works for all operating systems (WIN10 Pro only) and is reproducible, we can have an infrastructure that shares everything. The images are reproducible, scriptable and the documentation is in the same code.
-<img src="https://user-images.githubusercontent.com/26840321/126744266-b472f6cd-e6f0-49b1-a0ff-7d128949f139.png" alt="alt text" width="30%" height="auto">
+<img src="https://github.com/brendamrdz/week4-course14-devops/blob/main/images/docker.JPG?raw=true" alt="alt text" width="80%" height="auto">
 
 
 https://azure.microsoft.com/es-es/overview/what-is-devops/
