@@ -15,27 +15,13 @@ With this, the idea is that one of the results is more deployments that contain 
 A DevOps tools approach helps developers and operations teams build, test, deploy and monitor applications with speed, quality and control. Successful DevOps software implementations generally rely on an integrated set of solutions, or a toolchain, to eliminate manual steps, reduce errors, increase team agility, and scale beyond small teams.
 
 
-# Homogeneous Environments for Applications
+## Homogeneous Environments for Applications
 One of the ways to solve the "it works in my machine" problem is to have homogeneity in all environments. Running code on our local machine should look as similar as possible to the test and production environment.
-## Docker
+### Docker
 Docker is recommended, it works for all operating systems (WIN10 Pro only) and is reproducible, we can have an infrastructure that shares everything. The images are reproducible, scriptable and the documentation is in the same code.
 <img src="https://github.com/brendamrdz/week4-course14-devops/blob/main/images/docker.JPG?raw=true" alt="alt text" width="50%" height="auto">
 
 The following shows how to use a Dockerfile and manage the dependencies to have them in lock in, it is always recommended to install a version that you have already used and tested.
-- **FROM**: I look for a source image and from there the container is mounted.
-- **WORKDIR**: It is recommended not to run all the root. With this we tell Docker which is going to be our working folder.
-- **ADD**: It is where we indicate our dependencies as package.json, it makes cache of that layer not to execute it every time we run our container. It also serves to copy, as we do it in the tenth line.
-- **RUN**: we tell docker to execute a command. In this case npm install
-- **EXPOSE**: We expose port 3000.
-- **CMD**: Here we tell Docker to execute this command when running our container. In this case it will run the application.
-- **dockerignore**: it is almost the same as gitignore, but for docker.}
-
-## Terraform
-It is possible to make infrastructure with code. To have the equivalent of docker in infrastructure, having the same configuration in different servers and regions, there are several options to do this and one of them is Terraform.
-Terraform allows us to write infrastructure as code using declarative configuration files that can run on AWS in several regions and mount the same infrastructure in all of them. We only have to pass the parameters and this will allow us to scale our applications.
-
-<img src="https://github.com/brendamrdz/week4-course14-devops/blob/main/images/terraform.JPG?raw=true" alt="alt text" width="50%" height="auto">
-
 
 ```bashFROM node:11.1.0-alpine
 WORKDIR /app
@@ -45,5 +31,22 @@ EXPOSE 3000
 ADD . /app
 CMD ["node", "index"]
 ```
+- **FROM**: I look for a source image and from there the container is mounted.
+- **WORKDIR**: It is recommended not to run all the root. With this we tell Docker which is going to be our working folder.
+- **ADD**: It is where we indicate our dependencies as package.json, it makes cache of that layer not to execute it every time we run our container. It also serves to copy, as we do it in the tenth line.
+- **RUN**: we tell docker to execute a command. In this case npm install
+- **EXPOSE**: We expose port 3000.
+- **CMD**: Here we tell Docker to execute this command when running our container. In this case it will run the application.
+- **dockerignore**: it is almost the same as gitignore, but for docker.}
+
+### Terraform
+It is possible to make infrastructure with code. To have the equivalent of docker in infrastructure, having the same configuration in different servers and regions, there are several options to do this and one of them is Terraform.
+Terraform allows us to write infrastructure as code using declarative configuration files that can run on AWS in several regions and mount the same infrastructure in all of them. We only have to pass the parameters and this will allow us to scale our applications.
+
+## Test Implementation
+
+<img src="https://github.com/brendamrdz/week4-course14-devops/blob/main/images/terraform.JPG?raw=true" alt="alt text" width="40%" height="auto">
+
+
 https://azure.microsoft.com/es-es/overview/what-is-devops/
 https://www.ibm.com/mx-es/cloud/devops
